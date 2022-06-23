@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Youtube, video, downloader, easy, free, ads free, flexible, responsive, high quality videos, perfect, clean">
+    <meta name="description" content="Youtube video downloader">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>EazyTube</title>
+    <link rel="stylesheet" href="static/nicepage.css" media="screen">
+<link rel="stylesheet" href="static/signup.css" media="screen">
+    <script class="u-script" type="text/javascript" src="static/jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="static/nicepage.js" defer=""></script>
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "mine"
+    }</script>
+
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="signup">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+  </head>
+
+  <body class="u-body u-xl-mode"> 
+    <section class="u-align-center u-clearfix u-gradient u-section-1" id="sec-6653">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <h2 class="u-text u-text-default u-text-1">EazyTube</h2>
+        <p class="u-text u-text-default u-text-2"> Join other billions of people download high quality youtube videos</p>
+        <div class="u-align-center u-container-style u-gradient u-group u-shape-rectangle u-group-1">
+          <div class="u-container-layout u-valign-middle u-container-layout-1">
+            <h4 class="u-text u-text-3"> Go to youtube copy video url and come lets do the magic ads free</h4>
+            <div class="u-expanded-width u-form u-form-1">
+              <form action="" method="post"  class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form" source="email" name="form" style="padding: 0px;">
+                
+                {% with messages = get_flashed_messages(with_categories = true) %}
+                  {% if messages %}
+                    {% for category, message in messages %}
+                      <div class='alert alert-{{category}}'>
+                        <button type='button' class="ml-2 mb-1 close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden+"true">&times</span>
+                        </button>
+                        {{ message | safe }}
+                      </div>
+                    {% endfor %}
+                  {% endif %}
+                {% endwith %}
+                
+                <div class="u-form-group u-form-name">
+                  <label for="url" class="u-label">Video Url:</label>
+                  <input type="url" placeholder="Enter Video Url" id="url" name="link" class="u-border-2 u-border-palette-4-light-3 u-input u-input-rectangle u-palette-4-light-3">
+                </div>
+                {% for message in messages %}
+                  <p>{{ message }}</p>
+                {% endfor %}
+               
+                <div class="u-align-right u-form-group u-form-submit">
+                  <a href="" class="u-active-palette-2-dark-1 u-border-2 u-border-black u-btn u-btn-submit u-button-style u-hover-palette-2-dark-1 u-none u-text-black u-text-hover-white u-btn-1" download>Download</a>
+                  <input type="submit" value="Download" name="download" class="u-form-control-hidden">
+                </div>m 
+              </form>
+
+              <form action="/save" method="post">
+                <label for="homepage">Add your homepage:</label>
+                <input type="url" id="homepage" name="homepage"><br><br>
+                <input type="submit">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    <footer class="u-align-center u-clearfix u-footer u-gradient u-footer" id="sec-4bb3"><div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-small-text u-text u-text-variant u-text-1">CodingLevi</p>
+      </div>
+    </footer>
+  </body>
+</html>

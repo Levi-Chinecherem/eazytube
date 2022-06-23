@@ -1,0 +1,9 @@
+The Downloader.py is the console app, it shows downloading when the video starts downloading and shows done, when the video is completely downloaded and ready for view.
+but if you can't wait, when it shows downloading, a little time the video will appear in
+your folder, you can start watching it while its still downloading, so far you don't 
+fast forward it or skip to a future point  where is not downloaded yet
+
+for the web, it shows nothing, 
+but once you paste the link and hit enter it will start downloading,
+dont be deceived by it's silence or complains, that's a feature to update and work on in the near future
+ 
